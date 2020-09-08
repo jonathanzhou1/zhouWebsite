@@ -1,0 +1,60 @@
+body {
+	font-family: calibri;
+	font-size: large;
+	height: 100%;
+	background-color:#2e2212; 
+}
+html {
+	height:100%;
+}
+.parallax {
+	background-image: url("asianET.jpg");
+	height: 150%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 3em;
+	position: fixed;
+	background-color: #CFB997;
+	width: 100%;
+	padding-bottom: 10px;
+}
+nav {
+	text-align: center;
+	height: 50px;
+	
+}
+a:link {
+	background-color: transparent;
+	text-decoration: none;
+	padding-right: 25px;
+	padding-left:25px;
+}
+a:hover {
+	color: grey;
+	text-decoration: none;
+}
+
+footer {
+	clear: both;
+	padding: 10px;	
+	text-align: center;
+}
+
+p {
+
+
+	color: white;
+	background-color: #3f2e19;
+}
+h1 {
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+}

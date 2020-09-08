@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+	<link href = "compsciWeb.css" rel = "stylesheet" type = "text/css"/>
+	<script>
+	var $ = function (id) {
+	return document.getElementById(id);
+}
+
+var displayMessage = function ()
+{
+	var firstName = $("firstname").value;
+	var Age = $("age").value;
+	var hoursSlept = $("hoursslept").value;
+	
+	var sleepInt = parseInt(hoursSlept);
+	var ageInt = parseInt(Age);
+	
+	var lifeSleptAway = Math.round(ageInt * (sleepInt / 24));
+	
+	var myText = "Hi " + firstName + "." + " You have slept "
+	           + lifeSleptAway + " years of your life away.";
+			   
+	$("mymsg").innerHTML = myText;
+}
+
+window.onload = function ()
+{
+	$("mybutton").onclick = displayMessage;
+}
+</script>
+  </head>
+
+ <header>
+		Jonathan Zhou's Website
+		 <nav>
+		 
+    <a href="index.html">Index</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="aboutme.html">About Me</a>
+ </nav>
+</header>
+<div class="parallax" id="content">
+	<body>
+		<h1><p>Homepage</p></h1>
+		<p>Welcome to my website. W.I.P, but feel free to look around. Here's a fun little Javascript sleep calculator.</p>
+	</body>
+	<main>
+			<form id="myform" method="post" action="someprogram.php">
+			
+				<p>First Name: <br><input type="text" id="firstname" size="30"><br>
+				
+				Enter Your Age:  <br><input type="text" id="age" size="4"><br>
+				
+				Hours Slept each Night:	<br><input type="text" id="hoursslept" size="4"><br>
+				
+				<input type="button" id="mybutton" value="Calculate Unconsciousness"><br>
+			</form>
+			
+			<p id="mymsg"></p>
+	</main>
+</div>
+<footer>
+	<p>
+		Thank you for viewing my website.
+	</p>
+</footer>
+</html>
